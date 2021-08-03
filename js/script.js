@@ -10,7 +10,7 @@ form.addEventListener('submit',(e)=>{
     let userText = searchUser.value ;
 
     if(userText !== ""){
-        fetch(`http://ip-api.com/json/${userText}`)
+        fetch(`https://ipinfo.io/${userText}/json`)
         .then(response =>response.json())
         .then(data =>{
         {
